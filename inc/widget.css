@@ -1,0 +1,130 @@
+html {
+	color: #fff;
+	font-family: Helvetica, sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover h1, a:hover h2 {
+	opacity: 0.9;
+}
+
+.weather {
+	position: relative;
+	background: #8bf;
+	float: left;
+	width: 170px;
+	height: 230px;
+	padding: 5px;
+	opacity: 0.8;
+	opacity: 1.0;
+	/*border: solid 1px #fff;*/
+}
+.score1 .weather {
+	background-image: url("weather/snow.png");
+	background-repeat: no-repeat;
+}
+.score2 .weather {
+	background-image: url("weather/rain.png");
+	background-repeat: no-repeat;
+}
+.score3 .weather {
+	background-image: url("weather/cloudy.png");
+	background-repeat: no-repeat;
+}
+.score4 .weather {
+	background-image: url("weather/partlycloudy.png");
+	background-repeat: no-repeat;
+}
+.score5 .weather {
+	background-image: url("weather/sun.png");
+	background-repeat: no-repeat;
+}
+.inthesite .scorenone {
+	display: none;
+}
+
+.requested .weather {
+	opacity: 1.0;
+}
+
+.weather * {
+	width: 95%;
+	text-align: center;
+}
+
+.weather h1 {
+	position: absolute;
+	top: 130px;
+	font-size: 15px;
+	margin: 20px 0 0 0;
+}
+.weather h2 {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: normal;
+	font-size: 72px;
+	margin: 10px 0;
+}
+
+.weather .canvas {
+	position: absolute;
+	left: 0px;
+	width: 170px;
+	height: 50px;
+}
+.weather .trend, .weather .source {
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.article {
+	border: solid 1px #fff;
+}
+.inthesite .article {
+	border: none;
+}
+.weather .source {
+	height: auto;
+	text-align: center;
+	padding-bottom: .5em;
+	font-size: 9px;
+}
+.inthesite .linkback, .inthesite .linkback a {
+	display: none;
+}
+
+.weather .prev {
+	display: block;
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+}
+.weather .bar {
+	opacity: .2;
+	background: #fff;
+	width: 24%;
+	position: absolute;
+	bottom: 0;
+}
+.weather .prev .score {
+	display: none;
+}
+.weather:hover .prev .score {
+	display: inline;
+}
+.weather .prev .day {
+	font-size: 9px;
+}

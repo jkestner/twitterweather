@@ -1,0 +1,164 @@
+html {
+	padding: 1em;
+	height: 110%;
+//    background: #acd6f2;
+//    background-image: url('sky-back.jpg');
+//    background-repeat:repeat-x;
+}
+body {
+	position: relative;
+	background: white;
+	margin: auto;
+	padding: 2em;
+    margin-top: 60px;
+	width: 920px;
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+    line-height: 1.6em;
+}
+img {
+   behavior: url("pngbehavior.htc");
+   border: none;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: bold;
+	color: #679;
+}
+h2 {
+    color: #679;
+	font-size: 2.0em;
+	font-weight: normal;
+}
+ul {
+	padding-left: 1em;
+	margin: 0;
+}
+h2+ul {
+	margin-top: -1em;
+}
+
+a {
+	color: #3380aa;
+	text-decoration: none;
+}
+
+dt {
+	margin-bottom: .3em;
+}
+dd {
+	margin-bottom: 1em;
+	margin-left: 0;
+}
+
+#header {
+	background: none;
+    padding-bottom: 1em;
+}
+
+#header span#title {
+	display: block;
+	height: 38px;
+	width: 350px;
+	background-image: url('twitter-weather-title.gif');
+}
+#header h1 {
+	display: none;
+}
+
+#header img {
+	background: none;
+	position: absolute;
+	z-index: 3;
+}
+#header h1 {
+	margin: 0;
+}
+#header ul {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	padding: 0;
+	margin: 0;
+}
+#header li {
+	display: inline;
+	margin: 5px;
+}
+#header a {
+	text-decoration: none;
+}
+
+#header h2 {
+    margin: 0 0.3em;
+    margin-top: 0.3em;
+    color: #89a;
+	font-size: 1.7em;
+	font-weight: normal;
+}
+
+form {
+    clear: both;
+	font-size: 20px;
+}
+
+#search {
+//	background: #bde;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+    padding: 1em;
+	padding-bottom: .5em;
+    line-height: 1.2em;
+}
+#cloud {
+	background-image: url('clouds-back.png');
+    background-repeat: no-repeat;
+	position: absolute;
+    z-index: -1;
+	right: -195px;
+	top: -70px;
+    width:720px;
+    height:300px;
+    margin: 0;
+}
+#search input {
+	font-size: 18px;
+}
+#search #submit {
+	background: #FFE670;
+	font-size: 18px;
+}
+
+#splash {
+	padding-bottom: 10px;
+}
+
+#intro {
+	float: right;
+	width: 37%;
+}
+#intro p {
+    font-size: 1.2em;
+}
+
+#frame {
+	float: left;
+	width: 61%;
+}
+#weatherreports {
+	height: 1000px;
+	width: 100%;
+}
+
+
+#footer {
+	padding: 10px;
+	clear: both;
+	font-size: 14px;
+	color: #888;
+}
+
+

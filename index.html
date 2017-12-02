@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Twitter Weather</title>
+	<link rel="stylesheet" href="inc/base.css" charset="utf-8" />
+</head>
+<body>
+
+<div id="header">
+	<span id="title"><h1>Twitter Weather</h1></span>
+	<h2>condense the cloud</h2>
+	<p><em>John Kestner / Stephanie Bian / Henry Holtzman // <a href="http://eco.media.mit.edu">Information Ecology</a></em></p>
+</div>
+
+<div id="cloud">
+</div>
+<div id="search">
+	<form method="get" action="weatherreports.cgi" target="weatherreports">
+		term(s): <input type="text" name="search" size="16" /><input id="submit" type="submit" value="check the weather" />
+
+	</form>
+	<p>Enter nothing to get the currently <a href="weatherreports.cgi" target="weatherreports">trending topics</a> on Twitter.<br />
+	Separate multiple terms by commas. Ex: <a href="weatherreports.cgi?search=Coke,Pepsi" target="weatherreports">Coke,Pepsi</a> or <a href="weatherreports.cgi?search=Democrats,Republicans" target="weatherreports">Democrats,Republicans</a><br />
+	Use OR to group terms (<a href="weatherreports.cgi?search=Conan OR Coco" target="weatherreports">Conan OR Coco</a>), and - to exclude terms (<a href="weatherreports.cgi?search=tablet -Apple" target="weatherreports">tablet -Apple</a>) </p>
+</div>
+
+<div id="intro">
+
+	<h2>How it works</h2>
+	<p>The vast amounts of user-generated content on the Web often produce information overload as frequently as they provide enlightenment. Twitter Weather reduces large quantities of text into meaningful data - and visualizes the prevailing mood by rendering a weather-report-style display. Positive and negative feelings about a topic are mapped to a &quot;temperature&quot; from 0 to 100. '?' means that there is not enough data to analyze. Supporting Twitter Weather is a user-trained Web service that aggregates and ranks emotional content on a topic. Please <a href="http://scripts.mit.edu/~bian/newsurvey.php">rate a tweet</a> or 10 to help us improve Twitter Weather.</p>
+
+	<h2>Comment weather</h2>
+	<p>Experimental <strong><a href="javascript:(function(){a=document.getElementsByTagName(%22body%22)[0];a.innerHTML+='&lt;iframe name=%22CommentWeather%22 style=%22position:fixed;top:0;right:0;height:240px;z-index:200000;%22 scrolling=no src=%22http://twitterweather.media.mit.edu/weatherreports-comments.cgi?url='+location.href+'%22 scrolling=%22auto%22 frameborder=%220%22&gt;&lt;/iframe&gt;';})();">comment weather</a></strong> bookmarklet for (currently) the <a href="http://online.wsj.com">Wall Street Journal</a> and <a href="http://www.engadget.com">Engadget</a> (and some other <a href="http://www.weblogsinc.com/">Weblogs, Inc.</a> blogs). Drag that link to your toolbar, and when you're reading an article, click on it to get the emotional weather of the comments at a glance. Note that <a href="http://www.theonion.com/articles/local-idiot-to-post-comment-on-internet,2500/">Internet comments tend to be negative</a>, so think of it as the climate in London in March — 50 degrees is a great day.</p>
+	
+	<h2>Twitter geoweather</h2>
+	<p><strong><a href="geolocation/">Visualizations of Twitter weather mapped by location of tweets</a></strong> on a topic.</p>
+
+	<p style="font-size:1.0em">Twitter Weather is a research project of the <a href="http://eco.media.mit.edu">Information Ecology</a> group at the MIT Media Lab. It is currently in development (it probably looks bad on IE), but you can try it out and give us your feedback at twitterweather [at] media dot mit dot edu. Terms are cached for 15 minutes.</p>
+
+</div>
+
+<div id="frame">
+	<h2>Recent weather reports</h2>
+	<iframe src="weatherreports.cgi" id="weatherreports" name="weatherreports" scrolling="auto" frameborder="0">
+	  <p>Your browser does not support iframes.</p>
+	</iframe>
+</div>
+
+<div id="footer">
+	<p>A project of the <a href="http://eco.media.mit.edu">Information Ecology</a> research group at the <a href="http://media.mit.edu/">MIT Media Lab</a>.</p>
+</div>
+
+</body>
+</html>
